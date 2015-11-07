@@ -1,7 +1,7 @@
 
 package vconverter;
 
-public class FromLiters implements IConvertLogic {
+public class FromLitres implements IConvertLogic {
 
     @Override
     public double toCubes(double num) {
