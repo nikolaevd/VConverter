@@ -1,31 +1,31 @@
 
 package vconverter;
 
-public class FromGallons implements IConvertLogic {
+public class FromGallons implements IFromValue {
 
     @Override
-    public double toCubes(double num) {
-        return num * 0.00378541;
+    public double toCubes(double quantity) {
+        return quantity * 0.00378541;
     }
 
     @Override
-    public double toLiters(double num) {
-        return num * 3.78541;
+    public double toLiters(double quantity) {
+        return quantity * 3.78541;
     }
 
     @Override
-    public double toGallons(double num) {
-        return num;
+    public double toGallons(double quantity) {
+        return quantity;
     }
 
     @Override
-    public double toHalfLitres(double num) {
-        return num * (3.78541 / 2);
+    public double toHalfLitres(double quantity) {
+        return quantity * (3.78541 / 2);
     }
 
     @Override
-    public double toBuckets(double num) {
-        return num * (3.78541 * 12);
+    public double toBuckets(double quantity) {
+        return quantity * (3.78541 * 12);
     }
     
 }

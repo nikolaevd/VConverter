@@ -2,6 +2,8 @@
 package vconverter;
 
 public class VConverter extends javax.swing.JFrame {
+    
+    IFromValue fromValue;
 
     public VConverter() {
         initComponents();
@@ -212,10 +214,26 @@ public class VConverter extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField5MousePressed
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        double sourceNum = Double.parseDouble(jTextField5.getText());
+        double quantity = Double.parseDouble(jTextField5.getText());
         String sourceValue = String.valueOf(jComboBox1.getSelectedItem());
 
-        System.out.println(sourceNum + " " + sourceValue);
+        if(sourceValue.equals("метр куб.")){
+            fromValue = new FromCubes();
+            
+        }
+        else if(sourceValue.equals("литр")){
+            
+        }
+        else if(sourceValue.equals("галлон")){
+            
+        }
+        else if(sourceValue.equals("пол-литра")){
+            
+        }
+        else if(sourceValue.equals("ведро")){
+            
+        }
+        else{}
         
     }//GEN-LAST:event_jButton1MouseClicked
 
