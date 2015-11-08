@@ -7,6 +7,7 @@ public class VConverter extends javax.swing.JFrame {
 
     public VConverter() {
         initComponents();
+        jTextField5.requestFocus();
     }
 
     /**
@@ -221,6 +222,10 @@ public class VConverter extends javax.swing.JFrame {
         switch (sourceValue) {
             case "метр куб.":
                 fromValue = new FromCubes(quantity);
+                jLabel1.setText("Литр:");
+                jLabel2.setText("Галлон:");
+                jLabel3.setText("Пол-литра:");
+                jLabel4.setText("Ведро:");
                 jTextField1.setText(String.valueOf(fromValue.toLiters()));
                 jTextField2.setText(String.valueOf(fromValue.toGallons()));
                 jTextField3.setText(String.valueOf(fromValue.toHalfLitres()));
@@ -228,6 +233,10 @@ public class VConverter extends javax.swing.JFrame {
                 break;
             case "литр":
                 fromValue = new FromLiters(quantity);
+                jLabel1.setText("Метр куб.:");
+                jLabel2.setText("Галлон:");
+                jLabel3.setText("Пол-литра:");
+                jLabel4.setText("Ведро:");
                 jTextField1.setText(String.valueOf(fromValue.toCubes()));
                 jTextField2.setText(String.valueOf(fromValue.toGallons()));
                 jTextField3.setText(String.valueOf(fromValue.toHalfLitres()));
@@ -235,6 +244,10 @@ public class VConverter extends javax.swing.JFrame {
                 break;
             case "галлон":
                 fromValue = new FromGallons(quantity);
+                jLabel1.setText("Литр:");
+                jLabel2.setText("Метр. куб:");
+                jLabel3.setText("Пол-литра:");
+                jLabel4.setText("Ведро:");
                 jTextField1.setText(String.valueOf(fromValue.toLiters()));
                 jTextField2.setText(String.valueOf(fromValue.toCubes()));
                 jTextField3.setText(String.valueOf(fromValue.toHalfLitres()));
@@ -242,6 +255,10 @@ public class VConverter extends javax.swing.JFrame {
                 break;
             case "пол-литра":
                 fromValue = new FromHalfLiters(quantity);
+                jLabel1.setText("Литр:");
+                jLabel2.setText("Галлон:");
+                jLabel3.setText("Метр куб.:");
+                jLabel4.setText("Ведро:");
                 jTextField1.setText(String.valueOf(fromValue.toLiters()));
                 jTextField2.setText(String.valueOf(fromValue.toGallons()));
                 jTextField3.setText(String.valueOf(fromValue.toCubes()));
@@ -249,6 +266,10 @@ public class VConverter extends javax.swing.JFrame {
                 break;
             case "ведро":
                 fromValue = new FromBuckets(quantity);
+                jLabel1.setText("Литр:");
+                jLabel2.setText("Галлон:");
+                jLabel3.setText("Пол-литра:");
+                jLabel4.setText("Метр куб.:");
                 jTextField1.setText(String.valueOf(fromValue.toLiters()));
                 jTextField2.setText(String.valueOf(fromValue.toGallons()));
                 jTextField3.setText(String.valueOf(fromValue.toHalfLitres()));
