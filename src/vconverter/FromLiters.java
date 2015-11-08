@@ -24,7 +24,7 @@ class FromLiters extends AbstractFromValue {
 
     @Override
     public double toHalfLiters() {
-        return quantity / 2;
+        return quantity * 2;
     }
 
     @Override
