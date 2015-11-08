@@ -3,7 +3,7 @@ package vconverter;
 
 public class VConverter extends javax.swing.JFrame {
     
-    IFromValue fromValue;
+    AbstractFromValue fromValue;
 
     public VConverter() {
         initComponents();
@@ -218,8 +218,8 @@ public class VConverter extends javax.swing.JFrame {
         String sourceValue = String.valueOf(jComboBox1.getSelectedItem());
 
         if(sourceValue.equals("метр куб.")){
-            fromValue = new FromCubes();
-            
+            fromValue = new FromCubes(quantity);
+            jTextField1.setText(String.valueOf(fromValue.toLiters()));
         }
         else if(sourceValue.equals("литр")){
             

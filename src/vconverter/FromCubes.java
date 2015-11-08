@@ -1,30 +1,34 @@
 
 package vconverter;
 
-public class FromCubes implements IFromValue {
+class FromCubes extends AbstractFromValue {
+
+    FromCubes(double quantity) {
+        super(quantity);
+    }
 
     @Override
-    public double toCubes(double quantity) {
+    public double toCubes() {
         return quantity;
     }
 
     @Override
-    public double toLiters(double quantity) {
+    public double toLiters() {
         return quantity * 1000;
     }
 
     @Override
-    public double toGallons(double quantity) {
+    public double toGallons() {
         return quantity * 264.172;
     }
 
     @Override
-    public double toHalfLitres(double quantity) {
+    public double toHalfLitres() {
         return quantity * 2000;
     }
 
     @Override
-    public double toBuckets(double quantity) {
+    public double toBuckets() {
         return quantity * (1000 / 12);
     }
 
