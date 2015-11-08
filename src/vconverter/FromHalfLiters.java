@@ -1,9 +1,9 @@
 
 package vconverter;
 
-class FromHalfLitres extends AbstractFromValue {
+class FromHalfLiters extends AbstractFromValue {
 
-    FromHalfLitres(double quantity) {
+    FromHalfLiters(double quantity) {
         super(quantity);
     }
 

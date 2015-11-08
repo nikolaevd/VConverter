@@ -217,23 +217,45 @@ public class VConverter extends javax.swing.JFrame {
         double quantity = Double.parseDouble(jTextField5.getText());
         String sourceValue = String.valueOf(jComboBox1.getSelectedItem());
 
-        if(sourceValue.equals("метр куб.")){
-            fromValue = new FromCubes(quantity);
-            jTextField1.setText(String.valueOf(fromValue.toLiters()));
+        switch (sourceValue) {
+            case "метр куб.":
+                fromValue = new FromCubes(quantity);
+                jTextField1.setText(String.valueOf(fromValue.toLiters()));
+                jTextField2.setText(String.valueOf(fromValue.toGallons()));
+                jTextField3.setText(String.valueOf(fromValue.toHalfLitres()));
+                jTextField4.setText(String.valueOf(fromValue.toBuckets()));
+                break;
+            case "литр":
+                fromValue = new FromLiters(quantity);
+                jTextField1.setText(String.valueOf(fromValue.toCubes()));
+                jTextField2.setText(String.valueOf(fromValue.toGallons()));
+                jTextField3.setText(String.valueOf(fromValue.toHalfLitres()));
+                jTextField4.setText(String.valueOf(fromValue.toBuckets()));
+                break;
+            case "галлон":
+                fromValue = new FromGallons(quantity);
+                jTextField1.setText(String.valueOf(fromValue.toLiters()));
+                jTextField2.setText(String.valueOf(fromValue.toCubes()));
+                jTextField3.setText(String.valueOf(fromValue.toHalfLitres()));
+                jTextField4.setText(String.valueOf(fromValue.toBuckets()));
+                break;
+            case "пол-литра":
+                fromValue = new FromHalfLiters(quantity);
+                jTextField1.setText(String.valueOf(fromValue.toLiters()));
+                jTextField2.setText(String.valueOf(fromValue.toGallons()));
+                jTextField3.setText(String.valueOf(fromValue.toCubes()));
+                jTextField4.setText(String.valueOf(fromValue.toBuckets()));
+                break;
+            case "ведро":
+                fromValue = new FromBuckets(quantity);
+                jTextField1.setText(String.valueOf(fromValue.toLiters()));
+                jTextField2.setText(String.valueOf(fromValue.toGallons()));
+                jTextField3.setText(String.valueOf(fromValue.toHalfLitres()));
+                jTextField4.setText(String.valueOf(fromValue.toCubes()));
+                break;
+            default:
+                break;
         }
-        else if(sourceValue.equals("литр")){
-            
-        }
-        else if(sourceValue.equals("галлон")){
-            
-        }
-        else if(sourceValue.equals("пол-литра")){
-            
-        }
-        else if(sourceValue.equals("ведро")){
-            
-        }
-        else{}
         
     }//GEN-LAST:event_jButton1MouseClicked
 
