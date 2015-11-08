@@ -52,28 +52,28 @@ public class VConverter extends javax.swing.JFrame {
 
         jLabel4.setText("Ведро:");
 
-        jTextField1.setText("10000,000");
+        jTextField1.setText("10000,00");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
 
-        jTextField2.setText("2641,720");
+        jTextField2.setText("2641,72");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
             }
         });
 
-        jTextField3.setText("2000,000");
+        jTextField3.setText("20000,00");
         jTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField3ActionPerformed(evt);
             }
         });
 
-        jTextField4.setText("8333,000");
+        jTextField4.setText("830,00");
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField4ActionPerformed(evt);
@@ -236,10 +236,10 @@ public class VConverter extends javax.swing.JFrame {
                 jLabel2.setText("Галлон:");
                 jLabel3.setText("Пол-литра:");
                 jLabel4.setText("Ведро:");
-                jTextField1.setText(String.valueOf(String.format("%8.3f", fromValue.toLiters())));
-                jTextField2.setText(String.valueOf(String.format("%8.3f", fromValue.toGallons())));
-                jTextField3.setText(String.valueOf(String.format("%8.3f", fromValue.toHalfLiters())));
-                jTextField4.setText(String.valueOf(String.format("%8.3f", fromValue.toBuckets())));
+                jTextField1.setText(String.valueOf(String.format("%8.2f", fromValue.toLiters())));
+                jTextField2.setText(String.valueOf(String.format("%8.2f", fromValue.toGallons())));
+                jTextField3.setText(String.valueOf(String.format("%8.2f", fromValue.toHalfLiters())));
+                jTextField4.setText(String.valueOf(String.format("%8.2f", fromValue.toBuckets())));
                 break;
             case "литр":
                 fromValue = new FromLiters(quantity);
@@ -247,10 +247,10 @@ public class VConverter extends javax.swing.JFrame {
                 jLabel2.setText("Галлон:");
                 jLabel3.setText("Пол-литра:");
                 jLabel4.setText("Ведро:");
-                jTextField1.setText(String.valueOf(String.format("%8.3f", fromValue.toCubes())));
-                jTextField2.setText(String.valueOf(String.format("%8.3f", fromValue.toGallons())));
-                jTextField3.setText(String.valueOf(String.format("%8.3f", fromValue.toHalfLiters())));
-                jTextField4.setText(String.valueOf(String.format("%8.3f", fromValue.toBuckets())));
+                jTextField1.setText(String.valueOf(String.format("%8.2f", fromValue.toCubes())));
+                jTextField2.setText(String.valueOf(String.format("%8.2f", fromValue.toGallons())));
+                jTextField3.setText(String.valueOf(String.format("%8.2f", fromValue.toHalfLiters())));
+                jTextField4.setText(String.valueOf(String.format("%8.2f", fromValue.toBuckets())));
                 break;
             case "галлон":
                 fromValue = new FromGallons(quantity);
@@ -258,10 +258,10 @@ public class VConverter extends javax.swing.JFrame {
                 jLabel2.setText("Метр. куб:");
                 jLabel3.setText("Пол-литра:");
                 jLabel4.setText("Ведро:");
-                jTextField1.setText(String.valueOf(String.format("%8.3f", fromValue.toLiters())));
-                jTextField2.setText(String.valueOf(String.format("%8.3f", fromValue.toCubes())));
-                jTextField3.setText(String.valueOf(String.format("%8.3f", fromValue.toHalfLiters())));
-                jTextField4.setText(String.valueOf(String.format("%8.3f", fromValue.toBuckets())));
+                jTextField1.setText(String.valueOf(String.format("%8.2f", fromValue.toLiters())));
+                jTextField2.setText(String.valueOf(String.format("%8.2f", fromValue.toCubes())));
+                jTextField3.setText(String.valueOf(String.format("%8.2f", fromValue.toHalfLiters())));
+                jTextField4.setText(String.valueOf(String.format("%8.2f", fromValue.toBuckets())));
                 break;
             case "пол-литра":
                 fromValue = new FromHalfLiters(quantity);
@@ -269,10 +269,10 @@ public class VConverter extends javax.swing.JFrame {
                 jLabel2.setText("Галлон:");
                 jLabel3.setText("Метр куб.:");
                 jLabel4.setText("Ведро:");
-                jTextField1.setText(String.valueOf(String.format("%8.3f", fromValue.toLiters())));
-                jTextField2.setText(String.valueOf(String.format("%8.3f", fromValue.toGallons())));
-                jTextField3.setText(String.valueOf(String.format("%8.3f", fromValue.toCubes())));
-                jTextField4.setText(String.valueOf(String.format("%8.3f", fromValue.toBuckets())));
+                jTextField1.setText(String.valueOf(String.format("%8.2f", fromValue.toLiters())));
+                jTextField2.setText(String.valueOf(String.format("%8.2f", fromValue.toGallons())));
+                jTextField3.setText(String.valueOf(String.format("%8.2f", fromValue.toCubes())));
+                jTextField4.setText(String.valueOf(String.format("%8.2f", fromValue.toBuckets())));
                 break;
             case "ведро":
                 fromValue = new FromBuckets(quantity);
@@ -280,10 +280,10 @@ public class VConverter extends javax.swing.JFrame {
                 jLabel2.setText("Галлон:");
                 jLabel3.setText("Пол-литра:");
                 jLabel4.setText("Метр куб.:");
-                jTextField1.setText(String.valueOf(String.format("%8.3f", fromValue.toLiters())));
-                jTextField2.setText(String.valueOf(String.format("%8.3f", fromValue.toGallons())));
-                jTextField3.setText(String.valueOf(String.format("%8.3f", fromValue.toHalfLiters())));
-                jTextField4.setText(String.valueOf(String.format("%8.3f", fromValue.toCubes())));
+                jTextField1.setText(String.valueOf(String.format("%8.2f", fromValue.toLiters())));
+                jTextField2.setText(String.valueOf(String.format("%8.2f", fromValue.toGallons())));
+                jTextField3.setText(String.valueOf(String.format("%8.2f", fromValue.toHalfLiters())));
+                jTextField4.setText(String.valueOf(String.format("%8.2f", fromValue.toCubes())));
                 break;
             default:
                 break;

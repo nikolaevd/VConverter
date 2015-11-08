@@ -5,6 +5,7 @@
         <group>
             <file>file:/C:/Git/VConverter/src/vconverter/VConverter.java</file>
             <file>file:/C:/Git/VConverter/src/vconverter/AbstractValue.java</file>
+            <file>file:/C:/Git/VConverter/src/vconverter/FromCubes.java</file>
             <file>file:/C:/Git/VConverter/src/vconverter/FromLiters.java</file>
             <file>file:/C:/Git/VConverter/src/vconverter/FromGallons.java</file>
         </group>
