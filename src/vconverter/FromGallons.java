@@ -23,7 +23,7 @@ class FromGallons extends AbstractFromValue {
     }
 
     @Override
-    public double toHalfLitres() {
+    public double toHalfLiters() {
         return quantity * (3.78541 / 2);
     }
     

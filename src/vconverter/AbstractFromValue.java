@@ -12,7 +12,7 @@ abstract class AbstractFromValue {
     abstract double toCubes();
     abstract double toLiters();
     abstract double toGallons();
-    abstract double toHalfLitres();
+    abstract double toHalfLiters();
     abstract double toBuckets();
     
 }
