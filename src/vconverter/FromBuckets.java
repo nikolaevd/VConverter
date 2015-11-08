@@ -1,7 +1,7 @@
 
 package vconverter;
 
-class FromBuckets extends AbstractFromValue {
+class FromBuckets extends AbstractValue {
 
     FromBuckets(double quantity) {
         super(quantity);

@@ -3,7 +3,7 @@ package vconverter;
 
 public class VConverter extends javax.swing.JFrame {
     
-    AbstractFromValue fromValue;
+    AbstractValue fromValue;
 
     public VConverter() {
         initComponents();

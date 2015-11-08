@@ -1,11 +1,11 @@
 
 package vconverter;
 
-abstract class AbstractFromValue {
+abstract class AbstractValue {
     
     double quantity;
     
-    AbstractFromValue(double quantity){
+    AbstractValue(double quantity){
         this.quantity = quantity;
     }
     

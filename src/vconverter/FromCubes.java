@@ -1,7 +1,7 @@
 
 package vconverter;
 
-class FromCubes extends AbstractFromValue {
+class FromCubes extends AbstractValue {
 
     FromCubes(double quantity) {
         super(quantity);
